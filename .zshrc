@@ -9,3 +9,10 @@ zstyle :compinstall filename '/Users/mondaugen/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+#
+
+# source my old bashrc file
+source ~/.bashrc
+
+export PS1="%~%% "
+bindkey "^[k" backward-kill-line
