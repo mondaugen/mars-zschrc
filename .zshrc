@@ -19,3 +19,4 @@ export PS1="%~%% "
 
 # custom bindkeys
 bindkey "^[k" backward-kill-line
+bindkey "^[_" redo
