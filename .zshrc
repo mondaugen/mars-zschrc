@@ -11,3 +11,6 @@ compinit
 # End of lines added by compinstall
 # Created by newuser for 5.0.2
 export SHELL=`which zsh`
+
+# set prompt to show working directory
+PS1="%~%# "
