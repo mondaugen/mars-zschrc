@@ -20,3 +20,4 @@ export PS1="%~%% "
 # custom bindkeys
 bindkey "^[k" backward-kill-line
 bindkey "^[_" redo
+bindkey "^X^P" vi-find-prev-char
