@@ -12,10 +12,10 @@ compinit
 # Created by newuser for 5.0.2
 export SHELL=`which zsh`
 
+# set prompt to show working directory
+PS1="%~%# "
 # source my old bashrc file
 source ~/.bashrc
-
-export PS1="%~%% "
 
 # custom bindkeys
 bindkey "^[k" backward-kill-line
