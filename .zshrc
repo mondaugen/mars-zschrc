@@ -18,3 +18,10 @@ PS1="%~%# "
 # custom bindkeys
 bindkey "^[k" backward-kill-line
 bindkey "^[_" redo
+
+# change XON/XOFF so forward history search works
+stty -ixon
+
+# enable bash style word delimiters
+autoload -U select-word-style
+select-word-style bash
