@@ -21,3 +21,10 @@ source ~/.bashrc
 bindkey "^[k" backward-kill-line
 bindkey "^[_" redo
 bindkey "^X^P" vi-find-prev-char
+
+# change XON/XOFF so forward history search works
+stty -ixon
+
+# enable bash style word delimiters
+autoload -U select-word-style
+select-word-style bash
