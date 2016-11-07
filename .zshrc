@@ -19,6 +19,7 @@ PS1="%~%# "
 bindkey "^[k" backward-kill-line
 bindkey "^[_" redo
 bindkey "^X^P" vi-find-prev-char
+bindkey "^[r" kill-region
 
 # change XON/XOFF so forward history search works
 stty -ixon
