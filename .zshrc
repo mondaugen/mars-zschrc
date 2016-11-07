@@ -27,4 +27,8 @@ stty -ixon
 autoload -U select-word-style
 select-word-style bash
 
-alias xclip_ xclip -selection "clipboard"
+alias xclip_="xclip -selection 'clipboard'"
+alias octave="octave --no-gui"
+
+# ignore eof command
+set -o ignoreeof
