@@ -18,8 +18,10 @@ PS1="%~%# "
 # custom bindkeys
 bindkey "^[k" backward-kill-line
 bindkey "^[_" redo
-bindkey "^X^P" vi-find-prev-char
+bindkey "^\]" vi-find-next-char
+bindkey "^[^\]" vi-find-prev-char
 bindkey "^[r" kill-region
+bindkey -s "^[^b" "^[^\] ^f"
 
 # change XON/XOFF so forward history search works
 stty -ixon
