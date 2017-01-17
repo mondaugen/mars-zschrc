@@ -13,7 +13,10 @@ compinit
 export SHELL=`which zsh`
 
 # set prompt to show working directory
-PS1="%~%# "
+# indicates beginning of last command with cyan square
+COL_NORM="$(tput setab 9)"
+COL_CYAN="$(tput setab 6)"
+PS1="${COL_CYAN} ${COL_NORM}%~%# "
 
 # custom bindkeys
 bindkey "^[k" backward-kill-line
